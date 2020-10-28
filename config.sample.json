@@ -1,5 +1,6 @@
 {
+    "start_date": "2020-10-01T00:00:00Z",
     "domain": "yourdomain.com",
-    "non_interactive_client_id": "Xza6LpnP7z8eBpnKBLKzjaM795CLJbYO",
-    "non_interactive_client_secret": "XZzObB3WY2WVjSlEV8VORkwFuHvg-EaE-HIzQivYI8Fsr3O_iP-QSc4rXlzwWZyi"
+    "non_interactive_client_id": "",
+    "non_interactive_client_secret": ""
 }
