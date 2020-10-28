@@ -10,7 +10,7 @@ This tap:
 ## Installation
 
 ```bash
-> pip install tap-auth0
+pip install tap-auth0
 ```
 
 ## Configuration
@@ -18,12 +18,19 @@ This tap:
 This tap requires a `config.json` which specifies details regarding [M2M](https://auth0.com/docs/dashboard/guides/applications/register-app-m2m) authentication. See [config.sample.json](config.sample.json) for an example.
 
 To run `tap-auth0` with the configuration file, use this command:
-a
+
 ```bash
-› tap-auth0 -c my-config.json
+tap-auth0 -c my-config.json -d state.json
 ```
 
+## Changelog
+0.1.0 - code restructure to allow data extraction using updated_at and state file from singer. This will allow incremental loads  
+
+
 ## To-Do
+Schema Data Validation
+external schema/catalog control 
+
 
 - Add the following ressources from Auth0:
     - [Branding](https://auth0.com/docs/api/management/v2#!/Branding/get_branding)
