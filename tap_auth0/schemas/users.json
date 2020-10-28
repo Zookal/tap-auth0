@@ -1,56 +1,82 @@
 {
-    "type": "object",
-    "properties": {
-        "created_at": {
-            "type": "string", 
-            "format": "date-time"
-        },
-        "email": {
-            "type": "string",
-            "format": "email"
-        },
-        "email_verified": {
-            "type": "boolean"
-        },    
-        "identities": {
-            "type": "array",
-            "items": {
-                "properties": {
-                    "user_id": {
-                        "type": "string"
-                    },
-                    "provider": {
-                        "type": "string"
-                    },
-                    "connection": {
-                        "type": "string"
-                    },
-                    "isSocial": {
-                        "type": "boolean"
-                    }
-                }
-            }    
-        },
-        "last_password_reset": {
-                "type": "string",
-                "format": "date-time"
-        },
-            "name": {
-                "type": "string"
-        },
-            "nickname": {
-                "type": "string"
-        },
-            "picture": {
-                "type": "string"
-        },
-            "updated_at": {
-                "type": "string",
-                "format": "date-time"
-        },
-            "user_id": {
-                "type": "string",
-                "format": "date-time"
-        }
+  "type": "object",
+  "properties": {
+    "created_at": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "email": {
+      "type": "string"
+    },
+    "email_verified": {
+      "type": "boolean"
+    },
+    "identities": {
+      "type": "object",
+      "properties": {}
+    },
+    "last_password_reset": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "name": {
+      "type": "string"
+    },
+    "nickname": {
+      "type": "string"
+    },
+    "picture": {
+      "type": "string"
+    },
+    "updated_at": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "user_id": {
+      "type": "string"
+    },
+    "family_name": {
+      "type": "string"
+    },
+    "given_name": {
+      "type": "string"
+    },
+    "picture_large": {
+      "type": "string"
+    },
+    "short_name": {
+      "type": "string"
+    },
+    "video_upload_limits": {
+      "type": "object",
+      "properties": {}
+    },
+    "user_metadata": {
+      "type": "object",
+      "properties": {}
+    },
+    "last_login": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "last_ip": {
+      "type": "string"
+    },
+    "logins_count": {
+      "type": "integer"
+    },
+    "app_metadata": {
+      "type": "object",
+      "properties": {}
+    },
+    "install_type": {
+      "type": "string"
+    },
+    "installed": {
+      "type": "boolean"
+    },
+    "name_format": {
+      "type": "string"
     }
+  }
 }
